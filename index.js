@@ -21,7 +21,7 @@ var dispatcherglobal;
 
 bot.on('ready', () => {
 	console.log(`Logged in as ${bot.user.tag}!`);
-    bot.user.setActivity('EXTERMINAR HUMANOS', { type: 'PLAYING' })
+    bot.user.setActivity('Servir al Señor Poronga', { type: 'PLAYING' })
 });
 
 
