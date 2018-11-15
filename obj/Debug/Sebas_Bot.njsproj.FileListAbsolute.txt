@@ -1,0 +1,3 @@
+C:\Sebas\obj\Debug\Sebas_Bot.njsprojAssemblyReference.cache
+C:\Sebas\obj\Debug\Sebas_Bot.njsproj.CoreCompileInputs.cache
+C:\Sebas\bin\Microsoft.NodejsTools.WebRole.dll
