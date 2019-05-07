@@ -21,6 +21,10 @@ Thumbs.db
 
 # Node modules
 /node_modules
+/Gravebot-master
+/discord.js-stable
+/obj
+/bin
 
 # Coveralls
 coverage
