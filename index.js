@@ -272,7 +272,9 @@ bot.on('message', message => {
 			if (user.id == '401038834508496896')
 				message.channel.send(`Este usuario es un payaso\n`);
 			if (user.id == '382936913721556994')
-				message.channel.send('Este usuario es JOTO, porque no sabe jugar a dark souls')
+				message.channel.send('Este usuario es JOTO, porque no sabe jugar a dark souls');
+			if (user.id == '631193439421202446')
+				message.channel.send('A esta usuaria le gusta hacer cosplay de Megumin y Assasins Creed');
 			if (user.presence.status == 'online')
 				message.channel.send(`El usuario esta online\n`);
 			if (user.presence.status == 'offline')
@@ -290,6 +292,9 @@ bot.on('message', message => {
 			message.channel.send(`Nombre de Usuario: ${user.username}\n`);
 			message.channel.send(`ID: ${user.id}\n`);
 			message.channel.send(`Fecha de Registro: ${user.createdAt}\n`);
+			if (user.lastMessage == null)
+				message.channel.send('No ha hablado por este canal');
+			else
 			message.channel.send(`Ultimo mensaje del usuario del usuario: ${user.lastMessage}`);
 			message.channel.send(`Avatar: ${user.avatarURL}\n`);
 	if (user.presence.game !== null){
