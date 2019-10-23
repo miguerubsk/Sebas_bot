@@ -292,6 +292,9 @@ bot.on('message', message => {
 			message.channel.send(`Nombre de Usuario: ${user.username}\n`);
 			message.channel.send(`ID: ${user.id}\n`);
 			message.channel.send(`Fecha de Registro: ${user.createdAt}\n`);
+			if (user.lastMessage == null)
+				message.channel.send('No ha hablado por este canal');
+			else
 			message.channel.send(`Ultimo mensaje del usuario del usuario: ${user.lastMessage}`);
 			message.channel.send(`Avatar: ${user.avatarURL}\n`);
 	if (user.presence.game !== null){
