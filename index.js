@@ -425,6 +425,6 @@ bot.on('message', message => {
 
 
 
-bot.login(token);
+bot.login(process.env.Token);
 
 console.log('Bot listo');
