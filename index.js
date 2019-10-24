@@ -282,7 +282,7 @@ bot.on('message', message => {
 			if (user.presence.status == 'idle')
 				message.channel.send(`El usuario esta AFK\n`);
 			if (user.presence.status == 'dnd')
-				message.channel.send(`El usuario esta en modo No Molestar\n`);
+				message.channel.send(`El usuario no quiere ser molestado\n`);
 			if (user.bot)
 				message.channel.send(`El usuario es un bot\n`);
 			else
