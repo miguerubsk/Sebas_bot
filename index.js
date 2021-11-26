@@ -3,7 +3,7 @@ const { prefix, token } = require('./config.json');
 const bot = new Discord.Client();
 const ytdl = require('ytdl-core');
 const streamOptions = { seek: 0, volume: 1 };
-var dispatcherglobal;
+let dispatcherglobal;
 
 // static void UpdatePresence()
     // {
